@@ -4,10 +4,36 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+*
+{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    line-height: 160%;
+}
 body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background: #f1f1f1;
 }
-
+a,
+a:hover
+{
+    font-weight: 500;
+    color: #F62459;
+    text-decoration: none;
+}
+h2
+{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+.box
+{
+    border-radius: 4px;
+    background: #fff;
+    padding: 20px 40px;
+}
 .header-image {
     display: block;
     width: 100%;
@@ -30,9 +56,17 @@ body {
 }
 
 .headline h2 {
-    font-size: 77px;
+    font-size: 70px;
+    letter-spacing: 2px;
     background: #fff;
     background: rgba(255,255,255,0.9);
+}
+
+p.lead
+{
+    letter-spacing: 1.5px;
+    line-height: 170%;
+    font-size: 1.2em;
 }
 
 .featurette-divider {
