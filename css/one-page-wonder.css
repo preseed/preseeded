@@ -107,7 +107,8 @@ footer {
     display: inline; 
     background: transparent;
     color: #F62459;
-    height: 50px;
+    padding: 10px;
+    font-size: 1em;
     border: 1px solid #F62459;
 }
 .btn-info:hover
