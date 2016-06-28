@@ -131,6 +131,7 @@ ul, li
 ul.links 
 {
     text-align: center;
+    
 }
 .footer-content
 {
@@ -148,6 +149,7 @@ ul.links
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 2px;
+    line-height: 280%;
 }
 .col-centered
 {
