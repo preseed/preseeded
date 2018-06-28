@@ -344,7 +344,9 @@ ul.links
     color: #A9A9A9; 
 
 }
-
+.navigate_To {
+    outline: medium none !important;
+}
 @media(min-width:768px) {
     .navbar-custom {
         padding: 20px 0;
@@ -361,6 +363,9 @@ ul.links
         border-bottom: 1px solid rgba(255,255,255,.3);
         background: #000;
     }
+    #nav-modified {
+    margin-left: 3%;
+}
 }
 @media(max-width:767px) {
     .menu_img {
