@@ -364,8 +364,13 @@ ul.links
         background: #000;
     }
     #nav-modified {
-    margin-left: 3%;
-}
+        margin-left: 3%;
+    }
+    .navbar-custom a {
+        color: #808080;
+    }
+
+
 }
 @media(max-width:767px) {
     .menu_img {
