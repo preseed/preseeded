@@ -367,9 +367,10 @@ ul.links {
   .navbar-custom .nav li a:hover {
     color: rgba(255, 255, 255, 0.8);
   }
-    .sm-links {
+  .sm-links {
     float: right;
     position: relative !important;
+    padding-top: 12px !important;
   }
 }
 
