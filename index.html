@@ -100,6 +100,17 @@
             <div class="col-lg-8 col-md-8 col-xs-8">
                 <center>
                     <p style="text-align:center; padding-top:60px;">
+			  			<!-- SoundCloud -->
+						<div class="col-centered">
+							<div class="soundcloud">
+								<iframe id="soundcloud_widget" width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/269322758&amp;color=353c44&hide_related=true&visual=true&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+							</div>
+							<div class="space-10"></div>
+							<div id="highlighted-text" style="display: none;"></div>
+						</div>
+						<h4 class="headline headline_extra">We are building Preseed’s
+						<a href="#">Preseeded</a> to give freedom to people to pursue their loftiest, unchained visions. </h4>
+					
                         <img src="images/Preseeded-mainlogo.png" class="img-responsive center-block" alt="Preseeded_logo">
                         <br>
                         <h3>
@@ -175,18 +186,61 @@
                         <li>&middot;</li>
                     </ul>
                 </div> -->
-                <br>
+        </div>
+        		<center>
+                <h4 class="headline headline_extra">Everything else, by virtue of the above, is our
+                	<a href="http://culture.preseed.in/" target="_blank">culture</a> that enables you to understand your own business from a new stand point. If you are a startup looking for
+                	our advice, the above line is important for you, before you become a part of our culture, our thought.
+                </h4>
+                </center>
                 <div style="text-align: center;">
                     <a href="http://preseed.in/legal" target="_blank" style="color:#3d3d3d; font-weight: 500; letter-spacing: 1px; font-size:12px;">Copyright © 2018 Preseed Ventures Pvt. Ltd. | All Rights Reserved</a>
                 </div>
             </footer>
-        </div>
     </div>
     <!-- /.container -->
 
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+	<script>
+		$(document).ready(function () {
+			var widget = SC.Widget(document.getElementById('soundcloud_widget'));
+			widget.bind(SC.Widget.Events.READY, function () {
+			});
+			var intervalID = setInterval(function () {
+				widget.getPosition(callback);
+			}, 1);
+			function callback(data) {
+				var time = data / 100;
+				time = Math.floor(time);
 
+				if (time == 1) {
+					document.getElementById("highlighted-text").style.display = "";
+					document.getElementById("highlighted-text").innerHTML = "The juices out of earth";
+				}
+				if (time == 315) {
+					document.getElementById("highlighted-text").innerHTML = "strive to keep humanity on earth, healthy, wise and thriving";
+				}
+				if (time == 380) {
+					document.getElementById("highlighted-text").innerHTML = "Liberation of our fellow beings from structures, boundaries and meanings created by generations before us.";
+				}
+				if (time == 640) {
+					document.getElementById("highlighted-text").innerHTML = "among all who come in contact with it";
+				}
+				if (time == 671) {
+					document.getElementById("highlighted-text").innerHTML = "we shape into becoming startups with such men and women";
+				}
+				if (time == 710) {
+					document.getElementById("highlighted-text").innerHTML = "<a href=\"http://culture.preseed.in\">culture.Preseed.in</a>";
+				}
+				if (time == 754) {
+					document.getElementById("highlighted-text").innerHTML = "I am your new lover.";
+					setTimeout(function () { document.getElementById("highlighted-text").innerHTML = "We have extraordinary minds. <a href='http://apply.preseed.in'>Join us</a> if you do too."; }, 3000);
+				}
+			}
+		});
+	</script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/grayscale.js"></script>
