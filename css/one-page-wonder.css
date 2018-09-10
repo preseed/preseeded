@@ -272,6 +272,15 @@ ul.links {
   letter-spacing: 1px;
   line-height: 180%;
 }
+blockquote {
+    border-left: 0;
+    font-weight: lighter;
+
+}
+.last_headline_extra{
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
 /*Navigation*/
 .navbar-custom {
   margin-bottom: 0;
